@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+:root {
+    --color-menu: #989d9c;
+    --color-text: #515151;
+    --background-button-blue: #665ae1;
+    --background-button-green: #adff00;
+}
+
+header {
+    padding: 60px 60px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-menu);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+    transition: 500ms;
+
+}
+
+header a:hover {
+    color: #110c44;
+}
+
+header .button-blue {
+    background-color: var(--background-button-blue);
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 19px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 500ms;
+}
+
+header .button-blue:hover {
+    background-color: #110c44;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    gap: 100px;
+    padding: 60px 60px;
+}
+
+main h1 {
+    font-size: 90px;
+    color: var(--color-text);
+
+}
+
+main h2 {
+    font-size: 55px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+main p {
+    color: var(--color-text);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+main .button-green {
+    background-color: var(--background-button-green);
+    width: 345px;
+    height: 55px;
+    color: #000;
+    font-size: 19px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 500ms;
+}
+
+main .button-green:hover {
+    background-color: #8dc90e;
+    color: #fff;
+}
+
+@media (max-width:800px) {
+
+    header a {
+        text-align: center;
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 10px;
+
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+
+   
+
+    main h1 {
+
+        width: max-content;
+        font-size: 50px;
+    }
+
+    main h2 {
+        width: max-content;
+        font-size: 32px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    main img {
+        width: 95%;
+    }
+
+    main .button-green {
+        background-color: var(--background-button-green);
+        width: 200px;
+        height: 55px;
+        color: #000;
+        font-size: 19px;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 500ms;
+    }
+}
